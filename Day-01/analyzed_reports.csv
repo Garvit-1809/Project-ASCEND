@@ -1,0 +1,7 @@
+report_text,classification
+Worker fell from height,RISKY
+Safety training completed,ROUTINE
+Machine failure detected,RISKY
+Worker entered restricted area,RISKY
+Equipment inspection completed,ROUTINE
+Dangerous chemical exposure reported,RISKY
