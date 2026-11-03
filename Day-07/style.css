@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+header {
+    background: #12304a;
+    color: white;
+    padding: 28px 8%;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 0;
+    color: #cbd5e1;
+}
+
+main {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card,
+.report-section {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+    font-size: 16px;
+    color: #64748b;
+}
+
+.card p {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.report-section {
+    margin-top: 25px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    background: #1677d2;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #105da8;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+@media (max-width: 650px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+}
+#reportHistory {
+    padding-left: 20px;
+}
+
+#reportHistory li {
+    background: #f1f5f9;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 6px;
+    overflow-wrap: anywhere;
+}

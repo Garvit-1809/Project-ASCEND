@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Report Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Safety Report Dashboard</h1>
+        <p>Project ASCEND | Day 7</p>
+    </header>
+
+    <main>
+        <section class="dashboard">
+            <div class="card">
+                <h2>Total Reports</h2>
+                <p id="totalReports">0</p>
+            </div>
+
+            <div class="card">
+                <h2>Risky Reports</h2>
+                <p id="riskyReports">0</p>
+            </div>
+
+            <div class="card">
+                <h2>Routine Reports</h2>
+                <p id="routineReports">0    </p>
+            </div>
+        </section>
+
+        <section class="report-section">
+            <h2>Report Checker</h2>
+
+            <input
+                type="text"
+                id="reportInput"
+                placeholder="Enter a safety report"
+            >
+
+            <button id="checkButton">Check Report</button>
+
+            <p id="result">Your result will appear here.</p>
+            <h3>Report History</h3>
+            <ul id="reportHistory"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
