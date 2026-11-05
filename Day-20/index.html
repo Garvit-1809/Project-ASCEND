@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Report Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Safety Report Dashboard</h1>
+            <p>Manage, monitor and analyze safety reports</p>
+        </header>
+
+        <section class="stats">
+            <div class="stat-card">
+                <h2 id="totalCount">0</h2>
+                <p>Total Reports</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="riskyCount">0</h2>
+                <p>Risky Reports</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="routineCount">0</h2>
+                <p>Routine Reports</p>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2 id="formTitle">Add New Report</h2>
+
+            <form id="reportForm">
+                <input
+                    type="text"
+                    id="reportInput"
+                    placeholder="Enter safety report..."
+                    required
+                >
+
+                <button type="submit" id="submitButton">
+                    Add Report
+                </button>
+            </form>
+        </section>
+
+        <section class="report-section">
+            <h2>All Reports</h2>
+
+            <button id="loadApiButton">Load API Reports</button>
+
+            <div class="controls">
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search reports..."
+                >
+
+                <select id="filterSelect">
+                    <option value="ALL">All Reports</option>
+                    <option value="RISKY">Risky Only</option>
+                    <option value="ROUTINE">Routine Only</option>
+                </select>
+            </div>
+
+            <p id="message"></p>
+            <ul id="reportList"></ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    padding: 30px 15px;
+    color: #1e293b;
+}
+
+.container {
+    max-width: 950px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #64748b;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background: #eff6ff;
+    padding: 22px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.stat-card h2 {
+    color: #2563eb;
+    font-size: 30px;
+}
+
+.stat-card p {
+    margin-top: 8px;
+    color: #475569;
+}
+
+.form-section,
+.report-section {
+    margin-bottom: 30px;
+}
+
+.form-section h2,
+.report-section h2 {
+    margin-bottom: 15px;
+}
+
+form,
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input,
+select {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.88;
+}
+
+#reportList {
+    list-style: none;
+}
+
+#reportList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #f8fafc;
+    border-left: 5px solid #94a3b8;
+    border-radius: 6px;
+}
+
+#reportList li.risky {
+    border-left-color: #dc2626;
+}
+
+#reportList li.routine {
+    border-left-color: #16a34a;
+}
+
+.report-info {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+.status {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+.risky .status {
+    color: #dc2626;
+}
+
+.routine .status {
+    color: #16a34a;
+}
+
+.delete-btn {
+    background: #dc2626;
+}
+
+.edit-btn {
+    background: #475569;
+}
+
+#message {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 650px) {
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    form,
+    .controls {
+        flex-direction: column;
+    }
+
+    #reportList li {
+        flex-wrap: wrap;
+    }
+}
