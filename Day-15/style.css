@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    margin: 0;
+    padding: 40px 15px;
+}
+
+.container {
+    max-width: 650px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    color: #1e293b;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 5px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+li {
+    padding: 12px;
+    margin: 8px 0;
+    background: #f1f5f9;
+    border-radius: 5px;
+}
+
+#message {
+    color: #dc2626;
+}
