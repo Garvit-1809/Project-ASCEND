@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCEND - Day 18</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Safety Report Manager</h1>
+
+        <form id="reportForm">
+            <input
+                type="text"
+                id="reportInput"
+                placeholder="Enter safety report"
+            >
+            <button type="submit">Add Report</button>
+        </form>
+
+        <h2>Saved Reports</h2>
+        <p id="reportCount">Total Reports: 0</p>
+
+        <ul id="reportList"></ul>
+
+        <button id="clearButton">Clear All</button>
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
