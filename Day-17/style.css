@@ -1,0 +1,42 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 650px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+input {
+    width: 65%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#reportResult {
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    background: #f8fafc;
+}
