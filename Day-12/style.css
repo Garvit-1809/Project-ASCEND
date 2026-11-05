@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    padding: 40px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+h1 {
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+button:disabled {
+    background: #94a3b8;
+    cursor: not-allowed;
+}
+
+.report-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 18px;
+    margin-top: 12px;
+    border-radius: 8px;
+}
+
+.report-card h3 {
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.report-card p {
+    margin-bottom: 8px;
+}
+
+#status {
+    margin-top: 10px;
+    font-weight: bold;
+}
