@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Report Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Safety Report Analyzer</h1>
+        <p>Manage and analyze safety reports</p>
+
+        <form id="reportForm">
+            <input
+                type="text"
+                id="reportInput"
+                placeholder="Enter a safety report..."
+            >
+            <button type="submit">Add Report</button>
+        </form>
+
+        <div class="stats">
+            <div class="stat-card">
+                <h3 id="totalCount">0</h3>
+                <p>Total Reports</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="riskyCount">0</h3>
+                <p>Risky Reports</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="routineCount">0</h3>
+                <p>Routine Reports</p>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button id="loadButton">Load API Reports</button>
+            <button id="clearButton">Clear All</button>
+        </div>
+
+        <p id="message"></p>
+
+        <h2>Safety Reports</h2>
+        <ul id="reportList"></ul>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
