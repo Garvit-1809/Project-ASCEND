@@ -65,11 +65,17 @@ async function fetchReports() {
 
             user.textContent = "User ID: " + report.userId;
 
+            const postId = document.createElement("p");
+
+            postId.textContent = "Post ID: " + report.id;
+
             card.appendChild(title);
 
             card.appendChild(description);
 
             card.appendChild(user);
+
+            card.appendChild(postId);
 
             reportContainer.appendChild(card);
 
@@ -84,10 +90,10 @@ async function fetchReports() {
 
     } catch (error) {
 
-        // 8. HANDLE ERRORS
+    statusMessage.textContent =
+        "Error: Unable to fetch reports. Please try again.";
 
-        statusMessage.textContent =
-            "Error: " + error.message;
+    console.error("API Error:", error);
 
     } finally {
 
